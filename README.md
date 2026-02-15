@@ -34,7 +34,8 @@ After generation, you can place:
 ## Getting Started
 
 1. Install dependencies
-   If using pnpm (recommended):
+   
+If using pnpm (recommended):
 
 ```
 pnpm install
@@ -46,7 +47,7 @@ If using npm:
 npm install
 ```
 
-1. Configure properties
+2. Configure properties
 
 Edit the lines marked with `#` in `scripts/properties.ts`.
 Resolve any TypeScript errors before proceeding.

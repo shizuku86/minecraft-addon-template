@@ -1,11 +1,9 @@
-import type { KairoAddonProperties } from "@kairo-js/router";
-
 /**
  * 文末に # が記述されている箇所を適宜修正して使用します。
  * Modify and use where # is written at the end of the sentence as appropriate
  */
-export const properties: KairoAddonProperties = {
-    id: "kairo-template", # // a-z & 0-9 - _
+export const properties = {
+    id: "addon-template", # // a-z & 0-9 - _
     metadata: {
         /** 製作者の名前 */
         authors: [
@@ -13,9 +11,9 @@ export const properties: KairoAddonProperties = {
         ],
     },
     header: {
-        name: "Kairo-template", #
+        name: "Addon-template", #
         description:
-            "A starter template for developing Minecraft Bedrock addons that rely on Kairo.", #
+            "A starter template for developing Minecraft Bedrock addons.", #
         version: {
             major: 1,
             minor: 0,
@@ -35,11 +33,4 @@ export const properties: KairoAddonProperties = {
             version: "2.0.0", #
         },
     ],
-    /** 前提アドオン */
-    requiredAddons: {
-        /**
-         * id: version (string) // "kairo": "1.0.0"
-         */
-    },
-    tags: [],
 };

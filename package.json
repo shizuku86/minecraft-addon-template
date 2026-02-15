@@ -1,5 +1,5 @@
 {
-    "name": "kairo-template",
+    "name": "addon-template",
     "version": "1.0.0",
     "description": "**Stable Script API**\r - @minecraft/server - 2.5.0",
     "main": "index.js",
@@ -11,18 +11,24 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:kairo-js/kairo-template.git"
+        "url": "git@github.com:shizuku86/addon-template.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "@kairo-js/router": "^0.1.1",
+        "@minecraft/common": "^1.2.0",
+        "@minecraft/math": "^2.3.1",
         "@minecraft/server": "^2.5.0",
+        "@minecraft/server-admin": "^1.0.0-beta.11940b24",
+        "@minecraft/server-editor": "^0.1.0-beta.1.20.20-preview.20",
+        "@minecraft/server-gametest": "^1.0.0-beta.1.21.60-preview.24",
+        "@minecraft/server-net": "^1.0.0-beta.11940b24",
         "@minecraft/server-ui": "^2.0.0",
         "@minecraft/vanilla-data": "^1.26.0",
         "@types/node": "^24.1.0",
         "esbuild": "^0.27.2",
+        "fast-json-stringify": "^6.3.0",
         "fs-extra": "^11.3.0",
         "prettier": "3.6.2",
         "rimraf": "^6.0.1",

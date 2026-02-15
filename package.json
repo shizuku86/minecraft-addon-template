@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "typecheck": "tsc --noEmit",
-        "build": "rimraf BP/scripts && pnpm typecheck && node build.mjs && pnpm deploy",
+        "build": "rimraf BP/scripts && pnpm typecheck && node build.mjs && pnpm run deploy",
         "deploy": "node src/deploy.js"
     },
     "repository": {

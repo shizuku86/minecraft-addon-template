@@ -57,6 +57,7 @@ After generation, you can place:
 Running the build command performs the following:
 
 - Generates `manifest.json` for both BP/ and RP/ using `properties.ts`
+- Automatically increments the `patch` version in `manifest.json` on each build
 - Bundles all TypeScript files into a single `index.js`
 - Outputs compiled scripts to `BP/scripts/index.js`
 - Copies `pack_icon.png` from the project root into both BP/ and RP/

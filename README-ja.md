@@ -57,6 +57,7 @@ RP/   # Resource Pack
 ビルドを実行すると、以下の処理が行われます：
 
 - `properties.ts` を基に BP/ と RP/ の `manifest.json` を自動生成
+- ビルドのたびに `manifest.json` の `patch` バージョンを自動でインクリメント
 - `scripts/` 内の TypeScript ファイルをすべてバンドル
 - 出力ファイルを以下へ生成：
     ```

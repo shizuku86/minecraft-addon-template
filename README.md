@@ -39,6 +39,10 @@ Running the build command will:
 - Copy `pack_icon.png` from the project root into both BP/ and RP/
 - Copy the completed `BP/` and `RP/` into Minecraft’s development folder
 
+## Build System
+
+This template uses `esbuild` to bundle all TypeScript entry points into a single `index.js` file under `BP/scripts/`.
+
 ## Requirements
 
 - Node.js (for development and TypeScript build)
@@ -53,9 +57,18 @@ The following Minecraft modules are defined in `package.json`:
 Other available Minecraft modules include:
 
 - `@minecraft/common`
-- `@minecraft/math`
+- `@minecraft/debug-utilities`
+- `@minecraft/diagnostics`
 - `@minecraft/server-admin`
 - `@minecraft/server-editor`
 - `@minecraft/server-gametest`
 - `@minecraft/server-net`
+- `@minecraft/server-graphics`
 - `@minecraft/vanilla-data`
+- `@minecraft/math`
+
+## Performance Considerations
+
+This template includes `fast-json-stringify` for high-performance JSON serialization.
+
+When storing objects using `setDynamicProperty()`, it is recommended to serialize them using `fast-json-stringify` instead of `JSON.stringify` for better performance.

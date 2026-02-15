@@ -37,6 +37,10 @@ TypeScript のエラーが解消するようにしましょう。
 - ルート直下の `pack_icon.png` を BP/ と RP/ の両方にコピー
 - 完成した BP/ と RP/ を Minecraft の development フォルダへコピー
 
+## ビルドシステム
+
+このテンプレートでは、`esbuild` を使用してすべての TypeScript エントリーポイントを `BP/scripts/` 配下の単一の `index.js` ファイルへバンドルしています。
+
 ## 動作環境
 
 - Node.js (デプロイとTypeScriptビルド用)
@@ -51,9 +55,18 @@ TypeScript のエラーが解消するようにしましょう。
 他にも、以下のモジュールが利用可能です
 
 - `@minecraft/common`
-- `@minecraft/math`
+- `@minecraft/debug-utilities`
+- `@minecraft/diagnostics`
 - `@minecraft/server-admin`
 - `@minecraft/server-editor`
 - `@minecraft/server-gametest`
 - `@minecraft/server-net`
+- `@minecraft/server-graphics`
 - `@minecraft/vanilla-data`
+- `@minecraft/math`
+
+## パフォーマンス関連
+
+このテンプレートには、高速な JSON シリアライズを行うために `fast-json-stringify` が含まれています。
+
+`setDynamicProperty()` を使用してオブジェクトを保存する際は、パフォーマンス向上のため、標準の `JSON.stringify` ではなく `fast-json-stringify` を使用することを推奨します。

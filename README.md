@@ -34,37 +34,23 @@ After generation, you can place:
 ## Getting Started
 
 1. Install dependencies
-   
-   If using pnpm (recommended):
 
-   ```
-   pnpm install
-   ```
+    This template is designed for **pnpm only**.
 
-   If using npm:
-
-   ```
-   npm install
-   ```
+    ```
+    pnpm install
+    ```
 
 2. Configure properties
 
-   Edit the lines marked with `#` in `scripts/properties.ts`.
-   Resolve any TypeScript errors before proceeding.
+    `scripts/properties.ts` intentionally contains invalid `#` markers in the initial template.
+    Edit the lines marked with `#`, then confirm there are no TypeScript errors before proceeding.
 
 3. Build the Addon
 
-   If using pnpm:
-
-   ```
-   pnpm build
-   ```
-
-   If using npm:
-
-   ```
-   npm run build
-   ```
+    ```
+    pnpm build
+    ```
 
 ### What the Build Command Does
 

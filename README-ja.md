@@ -21,7 +21,7 @@ BP/   # Behavior Pack
 RP/   # Resource Pack
 ```
 
-これらのフォルダは、`npm run build` を初めて実行した際に自動生成されます。
+これらのフォルダは、`pnpm build` を初めて実行した際に自動生成されます。
 
 生成後は以下のように開発を行います：
 
@@ -35,35 +35,21 @@ RP/   # Resource Pack
 
 1. 依存関係のインストール
 
-    pnpm を使用する場合（推奨）：
+    このテンプレートは **pnpm 専用** です。
 
     ```
     pnpm install
     ```
-    
-    npm を使用する場合:
-
-    ```
-    npm install
-    ```
 
 2. プロパティの設定
 
-    `scripts/properties.ts` 内の `#` が付いている箇所を編集してください。
-    その後、TypeScript のエラーが無いことを確認してください。
+    初期テンプレートの `scripts/properties.ts` には、意図的に不正な `#` マーカーが含まれています。
+    `#` が付いている箇所を編集したうえで、TypeScript のエラーが無いことを確認してください。
 
 3. Addon のビルド
 
-    pnpm を使用する場合
-
     ```
     pnpm build
-    ```
-
-    npm を使用する場合
-
-    ```
-    npm run build
     ```
 
 ### ビルドコマンドの動作内容

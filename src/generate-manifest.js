@@ -7,7 +7,7 @@ const UUID_STORE_FILE = ".uuid.json";
 const VERSION_STORE_FILE = ".manifest-version.json";
 
 const DEFAULT_BP_DEPENDENCIES = {
-    "@minecraft/server": "2.4.0",
+    "@minecraft/server": "2.5.0",
     "@minecraft/server-ui": "2.0.0",
 };
 

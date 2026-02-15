@@ -72,10 +72,7 @@ Running the build command performs the following:
 
 - Generates `manifest.json` for both BP/ and RP/ using `properties.ts`
 - Bundles all TypeScript files into a single `index.js`
-- Outputs compiled scripts to:
-    ```
-    BP/scripts/index.js
-    ```
+- Outputs compiled scripts to `BP/scripts/index.js`
 - Copies `pack_icon.png` from the project root into both BP/ and RP/
 - Deploys `BP/` and `RP/` into Minecraft’s development folder (Windows only)
 

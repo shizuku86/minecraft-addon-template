@@ -7,7 +7,7 @@ export function writePackIcon(rootDir, properties) {
     const srcIcon = path.join(rootDir, "pack_icon.png");
 
     if (!fs.existsSync(srcIcon)) {
-        throw new Error("pack_icon.png not found in root directory.");
+        return;
     }
 
     const bpDir = path.join(rootDir, "BP");

@@ -35,36 +35,36 @@ After generation, you can place:
 
 1. Install dependencies
    
-If using pnpm (recommended):
+   If using pnpm (recommended):
 
-```
-pnpm install
-```
+   ```
+   pnpm install
+   ```
 
-If using npm:
+   If using npm:
 
-```
-npm install
-```
+   ```
+   npm install
+   ```
 
 2. Configure properties
 
-Edit the lines marked with `#` in `scripts/properties.ts`.
-Resolve any TypeScript errors before proceeding.
+   Edit the lines marked with `#` in `scripts/properties.ts`.
+   Resolve any TypeScript errors before proceeding.
 
 3. Build the Addon
 
-If using pnpm:
+   If using pnpm:
 
-```
-pnpm build
-```
+   ```
+   pnpm build
+   ```
 
-If using npm:
+   If using npm:
 
-```
-npm run build
-```
+   ```
+   npm run build
+   ```
 
 ### What the Build Command Does
 

@@ -1,19 +1,16 @@
 /**
- * 文末に # が記述されている箇所を適宜修正して使用します。
- * Modify and use where # is written at the end of the sentence as appropriate
+ * 初期値です。公開前に必ず変更してください。
+ * Default values. Change these before publishing.
  */
 export const properties = {
-    id: "addon-template", # // a-z & 0-9 - _
+    id: "addon-template", // a-z & 0-9 - _
     metadata: {
         /** 製作者の名前 */
-        authors: [
-            //"shizuku86"
-        ],
+        authors: ["your-name"],
     },
     header: {
-        name: "Addon-template", #
-        description:
-            "A starter template for developing Minecraft Bedrock addons.", #
+        name: "Addon Template",
+        description: "A starter template for developing Minecraft Bedrock addons.",
         version: {
             major: 1,
             minor: 0,
@@ -26,11 +23,11 @@ export const properties = {
     dependencies: [
         {
             module_name: "@minecraft/server",
-            version: "2.5.0", #
+            version: "2.5.0",
         },
         {
             module_name: "@minecraft/server-ui",
-            version: "2.0.0", #
+            version: "2.0.0",
         },
     ],
 };

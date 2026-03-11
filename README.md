@@ -1,6 +1,6 @@
 # Minecraft Addon Template
 
-[日本語版 README はこちら](https://github.com/shizuku86/addon-template/blob/main/README-ja.md)
+[日本語版 README はこちら](README-ja.md)
 
 This repository is a template for developing Minecraft Bedrock Addons using the Stable Script API.
 
@@ -43,8 +43,7 @@ After generation, you can place:
 
 2. Configure properties
 
-    `src/properties.ts` intentionally contains invalid `#` markers in the initial template.
-    Edit the lines marked with `#`, then confirm there are no TypeScript errors before proceeding.
+    Edit `src/properties.ts` with your addon metadata (id/name/version/authors) before publishing.
 
 3. Build the Addon
 
@@ -82,7 +81,7 @@ This template uses:
 - **TypeScript** for type checking (tsc --noEmit)
 - **esbuild** for fast bundling
 
-All entry points inside scripts/ are bundled into a single optimized output file.
+All entry points inside `src/` are bundled into optimized output files in `BP/scripts/`.
 
 ## Requirements
 
@@ -115,3 +114,8 @@ This template includes **fast-json-stringify** for high-performance JSON seriali
 When storing structured data using `setDynamicProperty()`
 
 it is recommended to use fast-json-stringify instead of JSON.stringify() for better performance and predictable schema-based serialization.
+
+
+## License
+
+This template is published under the MIT License. See [LICENSE](LICENSE).

@@ -1,4 +1,4 @@
-# Addon Template
+# Minecraft Addon Template
 
 [日本語版 README はこちら](https://github.com/shizuku86/addon-template/blob/main/README-ja.md)
 
@@ -34,47 +34,32 @@ After generation, you can place:
 ## Getting Started
 
 1. Install dependencies
-   If using pnpm (recommended):
 
-```
-pnpm install
-```
+    This template is designed for **pnpm only**.
 
-If using npm:
+    ```
+    pnpm install
+    ```
 
-```
-npm install
-```
+2. Configure properties
 
-1. Configure properties
-
-Edit the lines marked with `#` in `scripts/properties.ts`.
-Resolve any TypeScript errors before proceeding.
+    `scripts/properties.ts` intentionally contains invalid `#` markers in the initial template.
+    Edit the lines marked with `#`, then confirm there are no TypeScript errors before proceeding.
 
 3. Build the Addon
 
-If using pnpm:
-
-```
-pnpm build
-```
-
-If using npm:
-
-```
-npm run build
-```
+    ```
+    pnpm build
+    ```
 
 ### What the Build Command Does
 
 Running the build command performs the following:
 
 - Generates `manifest.json` for both BP/ and RP/ using `properties.ts`
+- Automatically increments the `patch` version in `manifest.json` on each build
 - Bundles all TypeScript files into a single `index.js`
-- Outputs compiled scripts to:
-    ```
-    BP/scripts/index.js
-    ```
+- Outputs compiled scripts to `BP/scripts/index.js`
 - Copies `pack_icon.png` from the project root into both BP/ and RP/
 - Deploys `BP/` and `RP/` into Minecraft’s development folder (Windows only)
 

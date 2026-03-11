@@ -1,4 +1,4 @@
-# Minecraft Addon Template
+# Bedrock Addon Template
 
 [English README is here](README.md)
 

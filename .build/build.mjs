@@ -4,13 +4,10 @@ import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const rootDir = path.resolve(__dirname);
+const rootDir = path.resolve(__dirname, "..");
 
 await esbuild.build({
-    entryPoints: [
-        path.join(rootDir, "scripts", "index.ts"),
-        path.join(rootDir, "scripts", "properties.ts"),
-    ],
+    entryPoints: [path.join(rootDir, "src", "index.ts"), path.join(rootDir, "src", "properties.ts")],
     bundle: true,
     format: "esm",
     platform: "neutral",

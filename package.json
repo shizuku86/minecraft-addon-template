@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "typecheck": "tsc --noEmit",
-        "build": "rimraf BP/scripts && pnpm typecheck && node .build/build.mjs && pnpm deploy",
+        "build": "rimraf BP/scripts && pnpm typecheck && node .build/build.mjs && pnpm run deploy",
         "deploy": "node .build/deploy.js"
     },
     "repository": {
@@ -14,7 +14,7 @@
     },
     "keywords": [],
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
         "@minecraft/common": "^1.2.0",
         "@minecraft/debug-utilities": "^1.0.0-beta.1.20.70-preview.20",
